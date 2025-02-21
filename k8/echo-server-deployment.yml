@@ -20,6 +20,6 @@ spec:
       containers:
       - name: echo-server
         #image: docker.io/alexeytarasovpa/oss-na24-slsa-workshop-project1-echo-server@sha256:4004ae316501b67d4d2f7eb82b02f36f32f91101cc9a53d5eb4dd044c16a552e
-        image: docker.io/alexeytarasovpa/oss-na24-slsa-workshop-project1-echo-server@sha256:89b928c25bfc1d7069de4e9e29508f234ffb8f5c8b819058b7f380a7692f5929
+        image: docker.io/atarasov8888/oss-na24-slsa-workshop-project1-echo-server@sha256:89b928c25bfc1d7069de4e9e29508f234ffb8f5c8b819058b7f380a7692f5929
         ports:
         - containerPort: 8081
