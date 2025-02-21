@@ -10,9 +10,9 @@ defaults:
     shell: bash
 
 env:
-  IMAGE_REGISTRY: docker.io
+  IMAGE_REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.event.repository.name }}-echo-server
-  REGISTRY_USERNAME: atarasov8888
+  REGISTRY_USERNAME: alexeytarasovpa
 
 jobs:
   build:
@@ -72,7 +72,7 @@ jobs:
       image: ${{ needs.build.outputs.image }}
       digest: ${{ needs.build.outputs.digest }}
       # Use name rather than env variable because env are not available for reusable workflows.
-      registry-username: atarasov8888
+      registry-username: alexeytarasovpa
       #registry-username: ${{ github.actor }}
     secrets:
       registry-password: ${{ secrets.REGISTRY_PASSWORD }}
